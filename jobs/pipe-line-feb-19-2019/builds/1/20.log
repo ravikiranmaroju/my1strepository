@@ -1,0 +1,2 @@
+[pipe-line-feb-19-2019] Running shell script
++ cp /Users/ravikiranmaroju/.jenkins/workspace/deepu-pipeline/spring-boot-samples/spring-boot-sample-atmosphere/target/spring-boot-sample-atmosphere-1.4.0.BUILD-SNAPSHOT.jar /Users/ravikiranmaroju/Downloads/apache-tomcat-8.5.34/webapps/

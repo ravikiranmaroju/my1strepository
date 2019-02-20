@@ -1,0 +1,38 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UpstreamCause>
+            <upstreamProject>deepu-pipeline</upstreamProject>
+            <upstreamUrl>job/deepu-pipeline/</upstreamUrl>
+            <upstreamBuild>18</upstreamBuild>
+            <upstreamCauses>
+              <hudson.model.Cause_-UserIdCause>
+                <userId>hi</userId>
+              </hudson.model.Cause_-UserIdCause>
+            </upstreamCauses>
+          </hudson.model.Cause_-UpstreamCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.envinject.EnvInjectPluginAction plugin="envinject@2.1.6"/>
+    <hudson.tasks.MailMessageIdAction plugin="mailer@1.21">
+      <messageId>&lt;1764243361.2.1548351369081.JavaMail.ravikiranmaroju@Macbook-Air.local&gt;</messageId>
+    </hudson.tasks.MailMessageIdAction>
+  </actions>
+  <queueId>34</queueId>
+  <timestamp>1548351365704</timestamp>
+  <startTime>1548351365712</startTime>
+  <result>SUCCESS</result>
+  <duration>110</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/Users/ravikiranmaroju/.jenkins/workspace/email</workspace>
+  <hudsonVersion>2.160</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

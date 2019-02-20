@@ -1,0 +1,16 @@
+[tomcat-pipeline] Running shell script
++ mvn -f spring-boot-samples/spring-boot-sample-atmosphere/pom.xml clean
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------< org.springframework.boot:spring-boot-sample-atmosphere >-------
+[INFO] Building Spring Boot Atmosphere Sample 1.4.0.BUILD-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ spring-boot-sample-atmosphere ---
+[INFO] Deleting /Users/ravikiranmaroju/.jenkins/workspace/tomcat-pipeline/spring-boot-samples/spring-boot-sample-atmosphere/target
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.217 s
+[INFO] Finished at: 2018-10-11T21:22:12+05:30
+[INFO] ------------------------------------------------------------------------

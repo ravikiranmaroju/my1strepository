@@ -1,0 +1,11 @@
+Started by user [8mha:////4Pks1cOnvNZCAwu0I7XrBu73M8zJiJHtoMWw/njTTuR6AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZu/dLi1CL9xJTczDwAawhpaMAAAAA=[0mravikiran
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /Users/ravikiranmaroju/.jenkins/workspace/email
+No emails were triggered.
+Email was triggered for: Always
+Sending email for trigger: Always
+Sending email to: ravikiranmaroju@gmail.com
+Connection error sending email, retrying once more in 10 seconds...
+Connection error sending email, retrying once more in 10 seconds...
+Failed after second try sending email
+Finished: SUCCESS

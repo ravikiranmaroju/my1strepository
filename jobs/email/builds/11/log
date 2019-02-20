@@ -1,0 +1,13 @@
+Started by upstream project "[8mha:////4O8tf7mRxkzIb4rP13o+/MvXWbrkuVXZnzicdd8uHG2KAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgYR/az8JP2U1NSCUt2CzIJUoL2p+gAFnfdXyQAAAA==[0mdeepu-pipeline" build number [8mha:////4Bp3Aj9PpDoZTigVwlSvKVhmwcamN9/Ah3hltWinKGP0AAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYx/az8JP2U1NSCUt2CzIJUoL2p+oYWABOJZM7LAAAA[0m18
+originally caused by:
+ Started by user [8mha:////4KruUdncZ7YC+FzhCHllZZ1RistQMskmGZtyjATCdJQHAAAAlB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYO/dLi1CL9jEwAVjGuRr0AAAA=[0mhi
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /Users/ravikiranmaroju/.jenkins/workspace/email
+No emails were triggered.
+Email was triggered for: Always
+Email was triggered for: Success
+Sending email for trigger: Always
+Sending email to: ravikiranmaroju@gmail.com
+Sending email for trigger: Success
+Sending email to: ravikiranmaroju@gmail.com
+Finished: SUCCESS

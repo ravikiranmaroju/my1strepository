@@ -1,0 +1,46 @@
+[deepu-pipeline] Running shell script
++ mvn -f spring-boot-samples/spring-boot-sample-atmosphere/pom.xml sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.login=93041306e0c3726128b9516d26f5732f871fa0b9
+[INFO] Scanning for projects...
+Downloading from spring-snapshots: http://repo.spring.io/snapshot/org/eclipse/m2e/lifecycle-mapping/1.0.0/lifecycle-mapping-1.0.0.pom
+Downloading from spring-milestones: http://repo.spring.io/milestone/org/eclipse/m2e/lifecycle-mapping/1.0.0/lifecycle-mapping-1.0.0.pom
+Downloading from spring-releases: http://repo.spring.io/release/org/eclipse/m2e/lifecycle-mapping/1.0.0/lifecycle-mapping-1.0.0.pom
+[WARNING] The POM for org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 is missing, no dependency information available
+Downloading from spring-snapshots: http://repo.spring.io/snapshot/org/eclipse/m2e/lifecycle-mapping/1.0.0/lifecycle-mapping-1.0.0.jar
+Downloading from spring-milestones: http://repo.spring.io/milestone/org/eclipse/m2e/lifecycle-mapping/1.0.0/lifecycle-mapping-1.0.0.jar
+Downloading from spring-releases: http://repo.spring.io/release/org/eclipse/m2e/lifecycle-mapping/1.0.0/lifecycle-mapping-1.0.0.jar
+[WARNING] Failed to retrieve plugin descriptor for org.eclipse.m2e:lifecycle-mapping:1.0.0: Plugin org.eclipse.m2e:lifecycle-mapping:1.0.0 or one of its dependencies could not be resolved: Could not find artifact org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 in spring-snapshots (http://repo.spring.io/snapshot)
+Downloading from spring-snapshots: http://repo.spring.io/snapshot/org/apache/maven/plugins/maven-metadata.xml
+Downloading from spring-releases: http://repo.spring.io/release/org/apache/maven/plugins/maven-metadata.xml
+Downloading from spring-milestones: http://repo.spring.io/milestone/org/apache/maven/plugins/maven-metadata.xml
+Downloading from spring-snapshots: http://repo.spring.io/snapshot/org/codehaus/mojo/maven-metadata.xml
+Downloading from spring-milestones: http://repo.spring.io/milestone/org/codehaus/mojo/maven-metadata.xml
+Downloading from spring-releases: http://repo.spring.io/release/org/codehaus/mojo/maven-metadata.xml
+Downloading from spring-snapshots: http://repo.spring.io/snapshot/org/codehaus/mojo/sonar-maven-plugin/maven-metadata.xml
+Downloading from spring-milestones: http://repo.spring.io/milestone/org/codehaus/mojo/sonar-maven-plugin/maven-metadata.xml
+Downloading from spring-releases: http://repo.spring.io/release/org/codehaus/mojo/sonar-maven-plugin/maven-metadata.xml
+[INFO] 
+[INFO] -------< org.springframework.boot:spring-boot-sample-atmosphere >-------
+[INFO] Building Spring Boot Atmosphere Sample 1.4.0.BUILD-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] The POM for org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 is missing, no dependency information available
+[WARNING] Failed to retrieve plugin descriptor for org.eclipse.m2e:lifecycle-mapping:1.0.0: Plugin org.eclipse.m2e:lifecycle-mapping:1.0.0 or one of its dependencies could not be resolved: Failure to find org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 in http://repo.spring.io/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of spring-snapshots has elapsed or updates are forced
+[INFO] 
+[INFO] --- sonar-maven-plugin:3.5.0.1254:sonar (default-cli) @ spring-boot-sample-atmosphere ---
+[INFO] User cache: /Users/ravikiranmaroju/.sonar/cache
+[INFO] SonarQube version: 7.4.0
+[INFO] Default locale: "en_GB", source code encoding: "UTF-8"
+[INFO] Publish mode
+[INFO] Load global settings
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.712 s
+[INFO] Finished at: 2019-01-18T10:33:18+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.sonarsource.scanner.maven:sonar-maven-plugin:3.5.0.1254:sonar (default-cli) on project spring-boot-sample-atmosphere: Not authorized. Please check the properties sonar.login and sonar.password. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

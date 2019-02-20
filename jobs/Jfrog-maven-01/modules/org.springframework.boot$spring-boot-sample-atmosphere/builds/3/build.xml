@@ -1,0 +1,44 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.maven.MavenBuild plugin="maven-plugin@3.1.2">
+  <actions>
+    <org.jfrog.hudson.MavenDependenciesRecord plugin="artifactory@2.16.2">
+      <build reference="../../.."/>
+      <dependencies/>
+    </org.jfrog.hudson.MavenDependenciesRecord>
+    <hudson.tasks.Fingerprinter_-FingerprintAction>
+      <record>
+        <entry>
+          <string>org.springframework.boot:spring-boot-dependencies:spring-boot-dependencies-1.4.0.BUILD-SNAPSHOT.pom</string>
+          <string>ec6fc1f1aea0b7f5abe05df6ebc74cc4</string>
+        </entry>
+      </record>
+    </hudson.tasks.Fingerprinter_-FingerprintAction>
+    <hudson.maven.reporters.MavenArtifactRecord>
+      <records/>
+      <parent reference="../../.."/>
+      <pomArtifact>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-sample-atmosphere</artifactId>
+        <version>1.4.0.BUILD-SNAPSHOT</version>
+        <type>pom</type>
+        <fileName>pom.xml</fileName>
+        <canonicalName>spring-boot-sample-atmosphere-1.4.0.BUILD-SNAPSHOT.pom</canonicalName>
+        <md5sum>9819fd76759fd52e2661ad6fbcf7d605</md5sum>
+      </pomArtifact>
+      <mainArtifact reference="../pomArtifact"/>
+      <attachedArtifacts/>
+    </hudson.maven.reporters.MavenArtifactRecord>
+    <org.jfrog.hudson.MavenDependenciesRecord plugin="artifactory@2.16.2">
+      <build reference="../../.."/>
+      <dependencies/>
+    </org.jfrog.hudson.MavenDependenciesRecord>
+  </actions>
+  <queueId>-1</queueId>
+  <timestamp>1548352356624</timestamp>
+  <startTime>1548352365656</startTime>
+  <result>FAILURE</result>
+  <duration>621</duration>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/Users/ravikiranmaroju/.jenkins/workspace/Jfrog-maven-01/spring-boot-samples/spring-boot-sample-atmosphere</workspace>
+</hudson.maven.MavenBuild>

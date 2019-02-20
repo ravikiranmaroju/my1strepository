@@ -1,0 +1,44 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.25">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.57">
+    <script>node {
+    
+stage(&apos;checkout&apos;)
+git &apos;https://github.com/g0t4/jenkins2-course-spring-boot.git&apos;
+
+stage(&apos;clean&apos;)
+sh &apos;mvn -f spring-boot-samples/spring-boot-sample-atmosphere/pom.xml clean&apos;
+
+stage(&apos;package&apos;)
+sh &apos;mvn -f spring-boot-samples/spring-boot-sample-atmosphere/pom.xml package&apos;
+
+stage(&apos;Quality-check-sonarqube&apos;)
+sh &apos;mvn -f spring-boot-samples/spring-boot-sample-atmosphere/pom.xml sonar:sonar \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.login=93041306e0c3726128b9516d26f5732f871fa0b9&apos;
+
+stage(&apos;Artifacts&apos;)
+archiveArtifacts &apos;spring-boot-samples/spring-boot-sample-atmosphere/target/*.jar&apos;
+
+stage(&apos;Report&apos;)
+step([$class: &apos;JUnitResultArchiver&apos;, testResults: &apos;spring-boot-samples/spring-boot-sample-atmosphere/target/surefire-reports/TEST-*.xml&apos;])
+
+stage(&apos;Input&apos;)
+input &apos;please give your input to proceed &apos;
+
+emailext ( 
+        to: &apos;ravikiranmaroju@gmail.com&apos;,
+        subject: &quot;Job &apos;${JOB_NAME}&apos; (${BUILD_NUMBER}) is waiting for input&quot;,
+        body: &quot;Please go to ${BUILD_URL} and verify the build&quot;)
+
+}
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

@@ -1,0 +1,33 @@
+Started by user [8mha:////4Pks1cOnvNZCAwu0I7XrBu73M8zJiJHtoMWw/njTTuR6AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZu/dLi1CL9xJTczDwAawhpaMAAAAA=[0mravikiran
+Building in workspace /Users/ravikiranmaroju/.jenkins/workspace/my-maven-2
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/ravikiranmaroju/maven-project-00.git # timeout=10
+Fetching upstream changes from https://github.com/ravikiranmaroju/maven-project-00.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/ravikiranmaroju/maven-project-00.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 3742a0c60fe3bdd878a76e13b9718db152663a0c (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3742a0c60fe3bdd878a76e13b9718db152663a0c
+Commit message: "Create pom.xml"
+ > git rev-list --no-walk 3742a0c60fe3bdd878a76e13b9718db152663a0c # timeout=10
+[my-maven-2] $ /bin/sh -xe /var/folders/jr/7shy0p_11kgcg4ymf7ks4z240000gn/T/jenkins2205001708341325307.sh
++ mvn package
+[INFO] Scanning for projects...
+[ERROR] [ERROR] Some problems were encountered while processing the POMs:
+[FATAL] Non-readable POM /Users/ravikiranmaroju/.jenkins/workspace/my-maven-2/pom.xml: no more data available START_DOCUMENT seen \n... @2:1 @ 
+ @ 
+[ERROR] The build could not read 1 project -> [Help 1]
+[ERROR]   
+[ERROR]   The project  (/Users/ravikiranmaroju/.jenkins/workspace/my-maven-2/pom.xml) has 1 error
+[ERROR]     Non-readable POM /Users/ravikiranmaroju/.jenkins/workspace/my-maven-2/pom.xml: no more data available START_DOCUMENT seen \n... @2:1
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

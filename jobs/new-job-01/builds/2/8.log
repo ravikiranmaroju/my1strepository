@@ -1,0 +1,23 @@
+[job-1] Running shell script
++ mvn -f spring-boot-samples/spring-boot-sample-atmosphere/pom.xml clean
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------< org.springframework.boot:spring-boot-sample-atmosphere >-------
+[INFO] Building Spring Boot Atmosphere Sample 1.4.0.BUILD-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from spring-snapshots: http://repo.spring.io/snapshot/org/springframework/boot/spring-boot-maven-plugin/1.4.0.BUILD-SNAPSHOT/maven-metadata.xml
+Progress (1): 2.1 kB                    Downloaded from spring-snapshots: http://repo.spring.io/snapshot/org/springframework/boot/spring-boot-maven-plugin/1.4.0.BUILD-SNAPSHOT/maven-metadata.xml (2.1 kB at 2.0 kB/s)
+Downloading from spring-snapshots: http://repo.spring.io/snapshot/org/springframework/boot/spring-boot-tools/1.4.0.BUILD-SNAPSHOT/maven-metadata.xml
+Progress (1): 819 B                   Downloaded from spring-snapshots: http://repo.spring.io/snapshot/org/springframework/boot/spring-boot-tools/1.4.0.BUILD-SNAPSHOT/maven-metadata.xml (819 B at 1.2 kB/s)
+Downloading from spring-snapshots: http://repo.spring.io/snapshot/org/springframework/boot/spring-boot-parent/1.4.0.BUILD-SNAPSHOT/maven-metadata.xml
+Progress (1): 820 B                   Downloaded from spring-snapshots: http://repo.spring.io/snapshot/org/springframework/boot/spring-boot-parent/1.4.0.BUILD-SNAPSHOT/maven-metadata.xml (820 B at 1.2 kB/s)
+Downloading from spring-snapshots: http://repo.spring.io/snapshot/org/springframework/boot/spring-boot-dependencies/1.4.0.BUILD-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.8 kB                    Downloaded from spring-snapshots: http://repo.spring.io/snapshot/org/springframework/boot/spring-boot-dependencies/1.4.0.BUILD-SNAPSHOT/maven-metadata.xml (1.8 kB at 2.3 kB/s)
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ spring-boot-sample-atmosphere ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.773 s
+[INFO] Finished at: 2018-10-11T00:44:04+05:30
+[INFO] ------------------------------------------------------------------------

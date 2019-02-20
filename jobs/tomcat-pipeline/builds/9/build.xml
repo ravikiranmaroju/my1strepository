@@ -1,0 +1,144 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.25">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.12">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <hudson.plugins.git.util.BuildData plugin="git@3.9.1">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.7.3">
+              <sha1>4bde91e33e2860b2aab142028c04eff37b7791f2</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>9</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/g0t4/jenkins2-course-spring-boot.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.9.1">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/Users/ravikiranmaroju/.jenkins/workspace/tomcat-pipeline</ws>
+    </hudson.plugins.git.GitTagAction>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.7">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/g0t4/jenkins2-course-spring-boot.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+  </actions>
+  <queueId>114</queueId>
+  <timestamp>1539272955078</timestamp>
+  <startTime>1539272955081</startTime>
+  <result>SUCCESS</result>
+  <duration>28932</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>node {
+    
+stage(&apos;checkout from SCM GITHUB&apos;)
+git &apos;https://github.com/g0t4/jenkins2-course-spring-boot.git&apos;
+
+stage(&apos;cleaning&apos;)
+sh &apos;mvn -f spring-boot-samples/spring-boot-sample-atmosphere/pom.xml clean&apos;
+
+stage(&apos;package&apos;)
+sh &apos;mvn -f spring-boot-samples/spring-boot-sample-atmosphere/pom.xml package&apos;
+
+stage(&apos;Deploy&apos;)
+sh &apos;cp /Users/ravikiranmaroju/.jenkins/workspace/mvn-build/spring-boot-samples/spring-boot-sample-atmosphere/target/spring-boot-sample-atmosphere-1.4.0.BUILD-SNAPSHOT.jar /Users/ravikiranmaroju/Downloads/apache-tomcat-8.5.34/webapps/&apos;
+
+stage(&apos;Rename-.jat-.war&apos;)
+sh &apos;mv /Users/ravikiranmaroju/Downloads/apache-tomcat-8.5.34/webapps/spring-boot-sample-atmosphere-1.4.0.BUILD-SNAPSHOT.jar /Users/ravikiranmaroju/Downloads/apache-tomcat-8.5.34/webapps/spring-boot-sample-atmosphere-1.4.0.BUILD-SNAPSHOT.war&apos;
+}        </script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>112784306</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>22024279</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>386975686</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>31973599</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>29342716</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>17</iota>
+    <head>1:17</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@3.9.1">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/g0t4/jenkins2-course-spring-boot.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches class="singleton-list">
+          <hudson.plugins.git.BranchSpec>
+            <name>*/master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions>
+          <hudson.plugins.git.extensions.impl.LocalBranch>
+            <localBranch>master</localBranch>
+          </hudson.plugins.git.extensions.impl.LocalBranch>
+        </extensions>
+      </scm>
+      <node></node>
+      <workspace>/Users/ravikiranmaroju/.jenkins/workspace/tomcat-pipeline</workspace>
+      <changelogFile>/Users/ravikiranmaroju/.jenkins/jobs/tomcat-pipeline/builds/9/changelog0.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

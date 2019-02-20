@@ -1,0 +1,2 @@
+[tomcat-pipeline] Running shell script
++ rm -rf '/Users/ravikiranmaroju/Downloads/apache-tomcat-8.5.34/webapps/*ar'

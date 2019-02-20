@@ -1,0 +1,2 @@
+Archiving artifacts
+‘curl -uadmin:AP5drncymCH9MATx -T spring-boot-samples/spring-boot-sample-atmosphere/target/*.jar "http://localhost:8081/artifactory/generic-local/output"’ doesn’t match anything: even ‘curl -uadmin:AP5drncymCH9MATx -T spring-boot-samples’ doesn’t exist

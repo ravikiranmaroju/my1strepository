@@ -1,0 +1,26 @@
+Started by upstream project "[8mha:////4OeyCgIC1UrIj7Gaa8YfzTf8VKxF8paYiULjaUOsHeUsAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZ+/az8JP3csjzdpNLMnBR9AEG7T27EAAAA[0mmvn-build" build number [8mha:////4Ca7a0t5vPikR59R2EnhH62mv6ca8jF4d4wKN8SJPFK9AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZB/az8JP3csjzdpNLMnBR9IxMAMA2uUcYAAAA=[0m24
+originally caused by:
+ Started by user [8mha:////4Pks1cOnvNZCAwu0I7XrBu73M8zJiJHtoMWw/njTTuR6AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZu/dLi1CL9xJTczDwAawhpaMAAAAA=[0mravikiran
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /Users/ravikiranmaroju/.jenkins/workspace/artifactory
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/g0t4/jenkins2-course-spring-boot.git # timeout=10
+Fetching upstream changes from https://github.com/g0t4/jenkins2-course-spring-boot.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/g0t4/jenkins2-course-spring-boot.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 4bde91e33e2860b2aab142028c04eff37b7791f2 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 4bde91e33e2860b2aab142028c04eff37b7791f2
+Commit message: "Adding in jacoco code coverage"
+ > git rev-list --no-walk 4bde91e33e2860b2aab142028c04eff37b7791f2 # timeout=10
+No emails were triggered.
+[ArtifactDeployer] - Starting deployment from the build step ...
+[ArtifactDeployer] - 0 file(s) have been copied from the '/Users/ravikiranmaroju/.jenkins/workspace/artifactory' to 'curl -uadmin:AP5drncymCH9MATx -T /Users/ravikiranmaroju/.jenkins/workspace/mvn-build/spring-boot-samples/spring-boot-sample-atmosphere/target/*.jar "http:/localhost:8081/artifactory/generic-local/"'.
+[ArtifactDeployer] - Stopping deployment from the build step ...
+Email was triggered for: Always
+Sending email for trigger: Always
+Sending email to: ravikiranmaroju@gmail.com
+Finished: SUCCESS

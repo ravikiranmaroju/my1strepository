@@ -1,0 +1,82 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.25">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.12">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>49</queueId>
+  <timestamp>1539202724803</timestamp>
+  <startTime>1539202724807</startTime>
+  <result>FAILURE</result>
+  <duration>1412</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node {
+    
+    notify(&apos;started&apos;)
+    
+stage(&apos;checkout&apos;)
+git &apos;https://github.com/g0t4/jenkins2-course-spring-boot.git&apos;
+
+stage(&apos;clean&apos;)
+sh &apos;mvn -f spring-boot-samples/spring-boot-sample-atmosphere/pom.xml clean&apos;
+
+stage(&apos;package&apos;)
+sh &apos;mvn -f spring-boot-samples/spring-boot-sample-atmosphere/pom.xml package&apos;
+
+stage(&apos;Artifacts&apos;)
+archiveArtifacts &apos;spring-boot-samples/spring-boot-sample-atmosphere/target/*.jar&apos;
+
+emailext ( 
+        to: &apos;ravikiranmaroju@gmail.com&apos;,
+        subject: &quot;Job &apos;${JOB_NAME}&apos; (${BUILD_NUMBER}) is waiting for input&quot;,
+        body: &quot;Please go to ${BUILD_URL} and verify the build&quot;)
+
+}
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>46146248</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>499902940</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>716953741</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>587528416</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>224655372</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>7</iota>
+    <head>1:7</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

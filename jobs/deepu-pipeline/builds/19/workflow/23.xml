@@ -1,0 +1,41 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@2.20">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.57">
+    <parentIds>
+      <string>22</string>
+    </parentIds>
+    <id>23</id>
+    <descriptorId>hudson.plugins.emailext.EmailExtStep</descriptorId>
+  </node>
+  <actions>
+    <wf.a.TimingAction plugin="workflow-api@2.29">
+      <startTime>1548351549786</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogActionImpl/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.57">
+      <arguments>
+        <entry>
+          <string>body</string>
+          <string>&lt;p&gt;SUCCESSFUL: Job &apos;deepu-pipeline [19]&apos;:&lt;/p&gt;
+        &lt;p&gt;Check console output at &quot;&lt;a href=&quot;http://localhost:8083/job/deepu-pipeline/19/&quot;&gt;deepu-pipeline [19]&lt;/a&gt;&quot;&lt;/p&gt;</string>
+        </entry>
+        <entry>
+          <string>recipientProviders</string>
+          <list>
+            <linked-hash-map>
+              <entry>
+                <string>$class</string>
+                <string>DevelopersRecipientProvider</string>
+              </entry>
+            </linked-hash-map>
+          </list>
+        </entry>
+        <entry>
+          <string>subject</string>
+          <string>SUCCESSFUL: Job &apos;deepu-pipeline [19]&apos;</string>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+  </actions>
+</Tag>

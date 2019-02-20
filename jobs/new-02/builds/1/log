@@ -1,0 +1,39 @@
+Started by user [8mha:////4Pks1cOnvNZCAwu0I7XrBu73M8zJiJHtoMWw/njTTuR6AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZu/dLi1CL9xJTczDwAawhpaMAAAAA=[0mravikiran
+Building in workspace /Users/ravikiranmaroju/.jenkins/workspace/new-02
+Cloning the remote Git repository
+Cloning repository https://github.com/ravikiranmaroju/maven-project-00.git
+ > git init /Users/ravikiranmaroju/.jenkins/workspace/new-02 # timeout=10
+Fetching upstream changes from https://github.com/ravikiranmaroju/maven-project-00.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/ravikiranmaroju/maven-project-00.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/ravikiranmaroju/maven-project-00.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/ravikiranmaroju/maven-project-00.git # timeout=10
+Fetching upstream changes from https://github.com/ravikiranmaroju/maven-project-00.git
+ > git fetch --tags --progress https://github.com/ravikiranmaroju/maven-project-00.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision b63d94b277e486626f8f11027f3b567116d7dbc2 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b63d94b277e486626f8f11027f3b567116d7dbc2
+Commit message: "j"
+First time build. Skipping changelog.
+[new-02] $ mvn -f jenk/pom.xml package
+[INFO] Scanning for projects...
+[8mha:////4Gb2rdcxuFBq6qvXoys+iApTjX7ZOgx9VnO+jS5pqWW0AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [ERROR] Some problems were encountered while processing the POMs:
+[8mha:////4Iy1AZPlExX6+tF2iwTX0MIFQBXp7hwF5Tl2AW+3pRCmAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 'parent.relativePath' of POM org.springframework.boot:spring-boot-sample-atmosphere:[unknown-version] (/Users/ravikiranmaroju/.jenkins/workspace/new-02/jenk/pom.xml) points at org.springframework.boot:spring-boot-sample-atmosphere instead of org.springframework.boot:spring-boot-samples, please verify your project structure @ line 4, column 10
+[FATAL] Non-resolvable parent POM for org.springframework.boot:spring-boot-sample-atmosphere:[unknown-version]: Could not find artifact org.springframework.boot:spring-boot-samples:pom:1.4.0.BUILD-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 4, column 10
+ @ 
+[8mha:////4Gb2rdcxuFBq6qvXoys+iApTjX7ZOgx9VnO+jS5pqWW0AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] The build could not read 1 project -> [Help 1]
+[8mha:////4Gb2rdcxuFBq6qvXoys+iApTjX7ZOgx9VnO+jS5pqWW0AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR]   
+[8mha:////4Gb2rdcxuFBq6qvXoys+iApTjX7ZOgx9VnO+jS5pqWW0AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR]   The project org.springframework.boot:spring-boot-sample-atmosphere:[unknown-version] (/Users/ravikiranmaroju/.jenkins/workspace/new-02/jenk/pom.xml) has 1 error
+[8mha:////4Gb2rdcxuFBq6qvXoys+iApTjX7ZOgx9VnO+jS5pqWW0AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR]     Non-resolvable parent POM for org.springframework.boot:spring-boot-sample-atmosphere:[unknown-version]: Could not find artifact org.springframework.boot:spring-boot-samples:pom:1.4.0.BUILD-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 4, column 10 -> [Help 2]
+[8mha:////4Gb2rdcxuFBq6qvXoys+iApTjX7ZOgx9VnO+jS5pqWW0AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4Gb2rdcxuFBq6qvXoys+iApTjX7ZOgx9VnO+jS5pqWW0AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[8mha:////4Gb2rdcxuFBq6qvXoys+iApTjX7ZOgx9VnO+jS5pqWW0AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[8mha:////4Gb2rdcxuFBq6qvXoys+iApTjX7ZOgx9VnO+jS5pqWW0AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4Gb2rdcxuFBq6qvXoys+iApTjX7ZOgx9VnO+jS5pqWW0AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[8mha:////4Gb2rdcxuFBq6qvXoys+iApTjX7ZOgx9VnO+jS5pqWW0AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException
+[8mha:////4Gb2rdcxuFBq6qvXoys+iApTjX7ZOgx9VnO+jS5pqWW0AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [Help 2] http://cwiki.apache.org/confluence/display/MAVEN/UnresolvableModelException
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,34 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@2.20">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.57">
+    <parentIds>
+      <string>15</string>
+    </parentIds>
+    <id>16</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.CoreStep</descriptorId>
+  </node>
+  <actions>
+    <wf.a.TimingAction plugin="workflow-api@2.29">
+      <startTime>1548351161011</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogActionImpl/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.57">
+      <arguments>
+        <entry>
+          <string>delegate</string>
+          <linked-hash-map>
+            <entry>
+              <string>$class</string>
+              <string>JUnitResultArchiver</string>
+            </entry>
+            <entry>
+              <string>testResults</string>
+              <string>spring-boot-samples/spring-boot-sample-atmosphere/target/surefire-reports/TEST-*.xml</string>
+            </entry>
+          </linked-hash-map>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+  </actions>
+</Tag>

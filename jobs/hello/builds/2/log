@@ -1,0 +1,43 @@
+Started by user [8mha:////4Pks1cOnvNZCAwu0I7XrBu73M8zJiJHtoMWw/njTTuR6AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZu/dLi1CL9xJTczDwAawhpaMAAAAA=[0mravikiran
+[EnvInject] - Loading node environment variables.
+Building in workspace /Users/ravikiranmaroju/.jenkins/workspace/hello
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/ravikiranmaroju/maven-project-00.git # timeout=10
+Fetching upstream changes from https://github.com/ravikiranmaroju/maven-project-00.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/ravikiranmaroju/maven-project-00.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 2ec6eb575d173c293684280ebdbf93beb6817cde (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 2ec6eb575d173c293684280ebdbf93beb6817cde
+Commit message: "Update Jenkinsfile"
+ > git rev-list --no-walk 171d27bf540d219548acd7fa74311d25621f93ec # timeout=10
+[hello] $ /bin/sh -xe /var/folders/jr/7shy0p_11kgcg4ymf7ks4z240000gn/T/jenkins2367942404252333310.sh
++ docker build .
+Sending build context to Docker daemon  293.4kB
+Step 1/22 : FROM maven:3-jdk-8
+ ---> ce22ba6526c6
+Step 2/22 : LABEL maintainer "Sathvick.sankoju@ADP.com"
+ ---> Using cache
+ ---> 800face10526
+Step 3/22 : ENV JENKINS_HOME /home/jenkins
+ ---> Using cache
+ ---> 6aebe8a91c1d
+Step 4/22 : ENV DOCKER_VERSION 17.06.2-ce
+ ---> Using cache
+ ---> 0d460e2e463f
+Step 5/22 : ENV DOCKER_COMPOSE_VERSION 1.20.1
+ ---> Using cache
+ ---> cf187841a572
+Step 6/22 : ENV KUBECTL_VERSION=v1.7.0
+ ---> Using cache
+ ---> 27aafc3a28b2
+Step 7/22 : RUN apt-get update && apt-get install -y net-tools openssh-server sudo vim && rm -rf /var/lib/apt/lists/*
+ ---> Using cache
+ ---> 8f87eaae122e
+Step 8/22 : COPY settings.xml /usr/share/maven/conf/
+COPY failed: stat /var/lib/docker/tmp/docker-builder546295001/settings.xml: no such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,26 @@
+[deepu-pipeline] Running shell script
++ mvn -f spring-boot-samples/spring-boot-sample-atmosphere/pom.xml clean
+[INFO] Scanning for projects...
+Downloading from spring-snapshots: http://repo.spring.io/snapshot/org/springframework/spring-framework-bom/4.3.2.BUILD-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.2 kB                    Downloaded from spring-snapshots: http://repo.spring.io/snapshot/org/springframework/spring-framework-bom/4.3.2.BUILD-SNAPSHOT/maven-metadata.xml (1.2 kB at 597 B/s)
+[INFO] 
+[INFO] -------< org.springframework.boot:spring-boot-sample-atmosphere >-------
+[INFO] Building Spring Boot Atmosphere Sample 1.4.0.BUILD-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from spring-snapshots: http://repo.spring.io/snapshot/org/springframework/boot/spring-boot-maven-plugin/1.4.0.BUILD-SNAPSHOT/maven-metadata.xml
+Progress (1): 0.5/2.1 kBProgress (1): 2.1 kB                        Downloaded from spring-snapshots: http://repo.spring.io/snapshot/org/springframework/boot/spring-boot-maven-plugin/1.4.0.BUILD-SNAPSHOT/maven-metadata.xml (2.1 kB at 1.7 kB/s)
+Downloading from spring-snapshots: http://repo.spring.io/snapshot/org/springframework/boot/spring-boot-tools/1.4.0.BUILD-SNAPSHOT/maven-metadata.xml
+Progress (1): 819 B                   Downloaded from spring-snapshots: http://repo.spring.io/snapshot/org/springframework/boot/spring-boot-tools/1.4.0.BUILD-SNAPSHOT/maven-metadata.xml (819 B at 669 B/s)
+Downloading from spring-snapshots: http://repo.spring.io/snapshot/org/springframework/boot/spring-boot-parent/1.4.0.BUILD-SNAPSHOT/maven-metadata.xml
+Progress (1): 820 B                   Downloaded from spring-snapshots: http://repo.spring.io/snapshot/org/springframework/boot/spring-boot-parent/1.4.0.BUILD-SNAPSHOT/maven-metadata.xml (820 B at 586 B/s)
+Downloading from spring-snapshots: http://repo.spring.io/snapshot/org/springframework/boot/spring-boot-dependencies/1.4.0.BUILD-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.8 kB                    Downloaded from spring-snapshots: http://repo.spring.io/snapshot/org/springframework/boot/spring-boot-dependencies/1.4.0.BUILD-SNAPSHOT/maven-metadata.xml (1.8 kB at 1.5 kB/s)
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ spring-boot-sample-atmosphere ---
+[INFO] Deleting /Users/ravikiranmaroju/.jenkins/workspace/deepu-pipeline/spring-boot-samples/spring-boot-sample-atmosphere/target
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.912 s
+[INFO] Finished at: 2018-10-12T00:36:11+05:30
+[INFO] ------------------------------------------------------------------------

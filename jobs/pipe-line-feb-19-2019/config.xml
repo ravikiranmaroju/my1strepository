@@ -1,0 +1,52 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.25">
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.57">
+    <script>node {
+    
+stage(&apos;checkout from SCM GITHUB&apos;)
+git &apos;https://github.com/g0t4/jenkins2-course-spring-boot.git&apos;
+
+stage(&apos;cleaning&apos;)
+sh &apos;mvn -f spring-boot-samples/spring-boot-sample-atmosphere/pom.xml clean&apos;
+
+stage(&apos;package&apos;)
+sh &apos;mvn -f spring-boot-samples/spring-boot-sample-atmosphere/pom.xml package&apos;
+
+stage(&apos;Quality-check-sonarqube&apos;)
+sh &apos;mvn -f spring-boot-samples/spring-boot-sample-atmosphere/pom.xml sonar:sonar \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.login=fbdac287206fba6fd2d9f40b00721cdef0db7204&apos;
+
+stage(&apos;Artifacts&apos;)
+archiveArtifacts &apos;spring-boot-samples/spring-boot-sample-atmosphere/target/*.jar&apos;
+
+stage(&apos;Report&apos;)
+step([$class: &apos;JUnitResultArchiver&apos;, testResults: &apos;spring-boot-samples/spring-boot-sample-atmosphere/target/surefire-reports/TEST-*.xml&apos;])
+
+stage(&apos;Confirmation before deploy&apos;)
+input &apos;Deploy to PROD-please Confirm&apos;
+    
+stage(&apos;Deploy&apos;)
+sh &apos;cp /Users/ravikiranmaroju/.jenkins/workspace/deepu-pipeline/spring-boot-samples/spring-boot-sample-atmosphere/target/spring-boot-sample-atmosphere-1.4.0.BUILD-SNAPSHOT.jar /Users/ravikiranmaroju/Downloads/apache-tomcat-8.5.34/webapps/&apos;
+
+stage(&apos;Rename.jar.war-files-just for a demo to see in the tomcat&apos;)
+sh &apos;mv /Users/ravikiranmaroju/Downloads/apache-tomcat-8.5.34/webapps/spring-boot-sample-atmosphere-1.4.0.BUILD-SNAPSHOT.jar /Users/ravikiranmaroju/Downloads/apache-tomcat-8.5.34/webapps/spring-boot-sample-atmosphere-1.4.0.BUILD-SNAPSHOT.war&apos;
+
+    stage(&apos;Email notification when Success&apos;)
+emailext (
+      subject: &quot;SUCCESSFUL: Job &apos;${env.JOB_NAME} [${env.BUILD_NUMBER}]&apos;&quot;,
+      body: &quot;&quot;&quot;&lt;p&gt;SUCCESSFUL: Job &apos;${env.JOB_NAME} [${env.BUILD_NUMBER}]&apos;:&lt;/p&gt;
+        &lt;p&gt;Check console output at &quot;&lt;a href=&quot;${env.BUILD_URL}&quot;&gt;${env.JOB_NAME} [${env.BUILD_NUMBER}]&lt;/a&gt;&quot;&lt;/p&gt;&quot;&quot;&quot;,
+      recipientProviders: [[$class: &apos;DevelopersRecipientProvider&apos;]]
+    )
+
+}    
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

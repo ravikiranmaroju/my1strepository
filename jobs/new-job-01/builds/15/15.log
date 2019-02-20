@@ -1,0 +1,2 @@
+[job-1] Running shell script
+/Users/ravikiranmaroju/.jenkins/workspace/job-1@tmp/durable-1d539125/script.sh: line 2: unexpected EOF while looking for matching `"'

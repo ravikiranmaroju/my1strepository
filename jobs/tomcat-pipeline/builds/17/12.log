@@ -1,0 +1,97 @@
+[tomcat-pipeline] Running shell script
++ mvn -f spring-boot-samples/spring-boot-sample-atmosphere/pom.xml sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.login=93041306e0c3726128b9516d26f5732f871fa0b9
+[INFO] Scanning for projects...
+[WARNING] The POM for org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 is missing, no dependency information available
+[WARNING] Failed to retrieve plugin descriptor for org.eclipse.m2e:lifecycle-mapping:1.0.0: Plugin org.eclipse.m2e:lifecycle-mapping:1.0.0 or one of its dependencies could not be resolved: Failure to find org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 in http://repo.spring.io/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of spring-snapshots has elapsed or updates are forced
+[INFO] 
+[INFO] -------< org.springframework.boot:spring-boot-sample-atmosphere >-------
+[INFO] Building Spring Boot Atmosphere Sample 1.4.0.BUILD-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] The POM for org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 is missing, no dependency information available
+[WARNING] Failed to retrieve plugin descriptor for org.eclipse.m2e:lifecycle-mapping:1.0.0: Plugin org.eclipse.m2e:lifecycle-mapping:1.0.0 or one of its dependencies could not be resolved: Failure to find org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 in http://repo.spring.io/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of spring-snapshots has elapsed or updates are forced
+[INFO] 
+[INFO] --- sonar-maven-plugin:3.5.0.1254:sonar (default-cli) @ spring-boot-sample-atmosphere ---
+[INFO] User cache: /Users/ravikiranmaroju/.sonar/cache
+[INFO] SonarQube version: 7.3.0
+[INFO] Default locale: "en_IN", source code encoding: "UTF-8"
+[INFO] Publish mode
+[INFO] Load global settings
+[INFO] Load global settings (done) | time=236ms
+[INFO] Server id: BF41A1F2-AWZhvpZJPB8Y93iJhIT5
+[INFO] User cache: /Users/ravikiranmaroju/.sonar/cache
+[INFO] Load/download plugins
+[INFO] Load plugins index
+[INFO] Load plugins index (done) | time=147ms
+[INFO] Load/download plugins (done) | time=217ms
+[INFO] Loaded core extensions: 
+[INFO] Process project properties
+[INFO] Load project repositories
+[INFO] Load project repositories (done) | time=224ms
+[INFO] Load quality profiles
+[INFO] Load quality profiles (done) | time=100ms
+[INFO] Load active rules
+[INFO] Load active rules (done) | time=1483ms
+[INFO] Load metrics repository
+[INFO] Load metrics repository (done) | time=29ms
+[INFO] Project key: org.springframework.boot:spring-boot-sample-atmosphere
+[INFO] Project base dir: /Users/ravikiranmaroju/.jenkins/workspace/tomcat-pipeline/spring-boot-samples/spring-boot-sample-atmosphere
+[INFO] -------------  Scan Spring Boot Atmosphere Sample
+[INFO] Base dir: /Users/ravikiranmaroju/.jenkins/workspace/tomcat-pipeline/spring-boot-samples/spring-boot-sample-atmosphere
+[INFO] Working dir: /Users/ravikiranmaroju/.jenkins/workspace/tomcat-pipeline/spring-boot-samples/spring-boot-sample-atmosphere/target/sonar
+[INFO] Source paths: pom.xml, src/main/java
+[INFO] Test paths: src/test/java
+[INFO] Source encoding: UTF-8, default locale: en_IN
+[INFO] Load server rules
+[INFO] Load server rules (done) | time=316ms
+[INFO] Index files
+[INFO] 5 files indexed
+[INFO] Quality profile for java: Sonar way
+[INFO] Quality profile for xml: Sonar way
+[INFO] Sensor JavaSquidSensor [java]
+[INFO] Configured Java source version (sonar.java.source): 8
+[INFO] JavaClasspath initialization
+[INFO] JavaClasspath initialization (done) | time=34ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=5ms
+[INFO] Java Main Files AST scan
+[INFO] 3 source files to be analyzed
+[WARNING] Metric 'comment_lines_data' is deprecated. Provided value is ignored.
+[INFO] 3/3 source files have been analyzed
+[INFO] Java Main Files AST scan (done) | time=1587ms
+[INFO] Java Test Files AST scan
+[INFO] 1 source files to be analyzed
+[INFO] 1/1 source files have been analyzed
+[INFO] Java Test Files AST scan (done) | time=174ms
+[INFO] Sensor JavaSquidSensor [java] (done) | time=3079ms
+[INFO] Sensor SurefireSensor [java]
+[INFO] parsing [/Users/ravikiranmaroju/.jenkins/workspace/tomcat-pipeline/spring-boot-samples/spring-boot-sample-atmosphere/target/surefire-reports]
+[INFO] Sensor SurefireSensor [java] (done) | time=192ms
+[INFO] Sensor JaCoCoSensor [java]
+[INFO] Analysing /Users/ravikiranmaroju/.jenkins/workspace/tomcat-pipeline/spring-boot-samples/spring-boot-sample-atmosphere/target/jacoco.exec
+[INFO] No information about coverage per test.
+[INFO] Sensor JaCoCoSensor [java] (done) | time=129ms
+[INFO] Sensor SonarJavaXmlFileSensor [java]
+[INFO] 1 source files to be analyzed
+[INFO] Sensor SonarJavaXmlFileSensor [java] (done) | time=768ms
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor XML Sensor [xml]
+[INFO] Sensor XML Sensor [xml] (done) | time=233ms
+[INFO] Sensor Zero Coverage Sensor
+[INFO] Sensor Zero Coverage Sensor (done) | time=31ms
+[INFO] Sensor Java CPD Block Indexer
+[INFO] Sensor Java CPD Block Indexer (done) | time=44ms
+[INFO] Calculating CPD for 3 files
+[INFO] CPD calculation finished
+[INFO] Analysis report generated in 317ms, dir size=59 KB
+[INFO] Analysis reports compressed in 68ms, zip size=23 KB
+[INFO] Analysis report uploaded in 56ms
+[INFO] ANALYSIS SUCCESSFUL, you can browse http://localhost:9000/dashboard?id=org.springframework.boot%3Aspring-boot-sample-atmosphere
+[INFO] Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+[INFO] More about the report processing at http://localhost:9000/api/ce/task?id=AWZj5av_GXxpOzthA-Wm
+[INFO] Task total time: 11.319 s
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 16.253 s
+[INFO] Finished at: 2018-10-11T21:41:28+05:30
+[INFO] ------------------------------------------------------------------------
